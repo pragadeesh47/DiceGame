@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: olivedrab;
+}
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+.playerSection{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkolivegreen;
+}
+.mainScore{
+    margin-top: 20%;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.currentScoreContainer{
+    margin-bottom: 20%;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.mainScore, .currentScoreContainer{
+    padding: 20px;
+    background-color: aquamarine;
+}
+.buttons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.buttons button{
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.newGameBtn{
+    margin-top: 75px;
+}
+.rollDiceBtn{
+    margin-top: 300px;
+}
+.holdBtn{
+    margin-top: 25px;
+}
+
+.playerActive{
+    background-color: rgba(150, 197, 152, 0.767);
+}
+.active{
+    position: absolute;
+    top: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: green;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.addActive{
+    position: absolute;
+}
+.closeBtn{
+    width: 20px;
+    background-color: aliceblue;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.rulesModal{
+    background-color: #FFFFFF;
+    height: 50vh;
+    width: 60%;
+    position: absolute;
+    top: 25%;
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+    animation-name: animation;
+    animation-duration: 0.4s;
+}
+.rulesHeading{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.rulesModal p{
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.winModal{
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 30%;
+    height: 50%;
+    top: 25%;
+    z-index: 10;
+    animation-name: animation;
+    animation-duration: 0.4s;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes animation {
+    from{
+        top: -200px;
+    }
+    to{
+        top: 25%;
+    }
+}
+.winModal p{
+    font-size: 2rem;
+    font-weight: bold;    
+    margin: 10px;
+}
+
+.blur{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    backdrop-filter: blur(5px);
+    z-index: 5;
+    display: none;
+}
+
+.rulesBtn{
+    text-transform: uppercase;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.cup{
+    width: 150px;
+}
+
+.diceImages{
+    position: absolute;
+    top: 50%;
+}
+.diceImage{
+    width: 25%;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiceGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <section class="playerOne playerSection playerActive">
+            <p class="addActive active status">active</p>
+            <div class="mainScore">
+                <p class="player">Player 1</p>
+                <p class="score">0</p>
+            </div>
+            <div class="currentScoreContainer">
+                <p class="current">Current</p>
+                <p class="currentScore">0</p>
+            </div>
+        </section>
+        <section class="playerTwo playerSection">
+            <p class="addActive status"></p>
+            <div class="mainScore">
+                <p class="player">Player 2</p>
+                <p class="score">0</p>
+            </div>
+            <div class="currentScoreContainer">
+                <p class="current">Current</p>
+                <p class="currentScore">0</p>
+            </div>
+        </section>
+    </div>
+    <div class="diceImages">
+        <img src="dice1.png" alt="" class="diceImage">
+    </div>
+    <div class="buttons">
+        <button class="newGameBtn">New game</button>
+        <button class="rollDiceBtn">roll dice</button>
+        <button class="holdBtn">hold</button>
+    </div>
+    <button class="rulesBtn">Rules</button>
+    <div class="rulesModal">
+        <img src="close.png" alt="close" class="closeBtn">
+        <p class="rulesHeading">Rules</p>
+        <p>1.If the player get 1 in 🎲 DICE then all the CURRENT SCORE become reduced. <br>
+
+            2.Player can press the 📥HOLD button to add all his CURRENT SCORE. <br>
+            
+            3.After pressing the 📥HOLD button chance will goes to opposite player. <br>
+            
+            4.PLAYER who gets SCORE HUNDRED will WIN the Game</p>
+
+    </div>
+
+    <div class="winModal">
+        <img src="close.png" alt="close" class="closeBtn" id="winBtn">
+        <p class="winner">Player 1</p>
+        <br>
+        <img src="cup.png" alt="" class="cup">
+        <br>
+        <br>
+        <p>WINS</p>
+    </div>
+    <div class="blur">
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
